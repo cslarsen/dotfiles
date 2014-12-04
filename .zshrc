@@ -97,8 +97,11 @@ uname="`uname -s`"
   if [ "x$uname" = "xDarwin" ] ; then
     export ZSH=$HOME/.oh-my-zsh
     ZSH_THEME="af-magic"
-    plugins=(git)
+    plugins=()
     source ~/.oh-my-zsh/oh-my-zsh.sh
+
+    # Slightly modify af-magic prompt
+    PROMPT='$FG[237]%{$reset_color%}$FG[032]%~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
   fi
 
 ### MOTD
