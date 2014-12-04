@@ -1,0 +1,147 @@
+" This file is maintained by vimp
+
+" ==== pathogen ====
+if filereadable("/Users/csl/.vim/autoload/pathogen.vim")
+  execute pathogen#infect()
+endif
+
+" ==== molokai ====
+if filereadable("/Users/csl/.vim/colors/molokai.vim")
+  if !filereadable("/Users/csl/.vim/bundle/molokai/doc/tags")
+    call pathogen#helptags()
+  endif
+  colorscheme molokai
+endif
+
+" ==== powerline ====
+if filereadable("/Users/csl/.vim/bundle/powerline")
+  if !filereadable("/Users/csl/.vim/bundle/powerline/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== ctrlp ====
+if filereadable("/Users/csl/.vim/bundle/ctrlp")
+  if !filereadable("/Users/csl/.vim/bundle/ctrlp/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== nerdtree@ctrl-d ====
+if filereadable("/Users/csl/.vim/bundle/nerdtree@ctrl-d")
+  if !filereadable("/Users/csl/.vim/bundle/nerdtree@ctrl-d/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== nerdtree ====
+if filereadable("/Users/csl/.vim/bundle/nerdtree")
+  if !filereadable("/Users/csl/.vim/bundle/nerdtree/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== signify ====
+if filereadable("/Users/csl/.vim/bundle/signify")
+  if !filereadable("/Users/csl/.vim/bundle/signify/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== snipmate ====
+if filereadable("/Users/csl/.vim/bundle/snipmate")
+  if !filereadable("/Users/csl/.vim/bundle/snipmate/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== undotree@ctrl-u ====
+if filereadable("/Users/csl/.vim/bundle/undotree@ctrl-u")
+  if !filereadable("/Users/csl/.vim/bundle/undotree@ctrl-u/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== undotree ====
+if filereadable("/Users/csl/.vim/bundle/undotree")
+  if !filereadable("/Users/csl/.vim/bundle/undotree/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== fugitive ====
+if filereadable("/Users/csl/.vim/bundle/fugitive")
+  if !filereadable("/Users/csl/.vim/bundle/fugitive/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== taglist ====
+if filereadable("/Users/csl/.vim/bundle/taglist")
+  if !filereadable("/Users/csl/.vim/bundle/taglist/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== taglist@ctrl-a ====
+if filereadable("/Users/csl/.vim/bundle/taglist@ctrl-a")
+  if !filereadable("/Users/csl/.vim/bundle/taglist@ctrl-a/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== tabs@ctrl-lhtk ====
+if filereadable("/Users/csl/.vim/bundle/tabs@ctrl-lhtk")
+  if !filereadable("/Users/csl/.vim/bundle/tabs@ctrl-lhtk/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== forcequit@ctrl-x ====
+if filereadable("/Users/csl/.vim/bundle/forcequit@ctrl-x")
+  if !filereadable("/Users/csl/.vim/bundle/forcequit@ctrl-x/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== colorcolumn ====
+if filereadable("/Users/csl/.vim/bundle/colorcolumn")
+  if !filereadable("/Users/csl/.vim/bundle/colorcolumn/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== leader@comma ====
+if filereadable("/Users/csl/.vim/bundle/leader@comma")
+  if !filereadable("/Users/csl/.vim/bundle/leader@comma/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== invnumber@ctrl-n ====
+if filereadable("/Users/csl/.vim/bundle/invnumber@ctrl-n")
+  if !filereadable("/Users/csl/.vim/bundle/invnumber@ctrl-n/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== nohlsearch@ctrl-o ====
+if filereadable("/Users/csl/.vim/bundle/nohlsearch@ctrl-o")
+  if !filereadable("/Users/csl/.vim/bundle/nohlsearch@ctrl-o/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== surround ====
+if filereadable("/Users/csl/.vim/bundle/surround")
+  if !filereadable("/Users/csl/.vim/bundle/surround/doc/tags")
+    call pathogen#helptags()
+  endif
+endif
+
+" ==== nerdcommenter ====
+if filereadable("/Users/csl/.vim/bundle/nerdcommenter")
+  if !filereadable("/Users/csl/.vim/bundle/nerdcommenter/doc/tags")
+    call pathogen#helptags()
+  endif
+endif

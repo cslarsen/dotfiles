@@ -1,0 +1,8 @@
+# Enables history search with up and down arrows, so typing "cd /" and
+# pressing up arrow matches on that.
+
+"\e[A": history-search-backward
+"\e[B": history-search-forward
+
+set show-all-if-ambiguous on
+set completion-ignore-case on

@@ -1,0 +1,1 @@
+nmap <silent> <C-n> :set invnumber<Cr>
