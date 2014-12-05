@@ -6,6 +6,9 @@ uname="`uname -s`"
   # First look in user-bin, then local-bin, then elsewhere
   export PATH=~/bin:/usr/local/bin:${PATH}
 
+  # Enable 256 colors in terminal
+  export TERM=xterm-256color
+
   ### MAC OS X SPECIFIC SETTINGS
 
   if [ "x$uname" = "xDarwin" ] ; then
@@ -99,6 +102,12 @@ uname="`uname -s`"
 
   # Make R not ask to save workspace
   alias R='R --no-save'
+
+## Load host specific configurations
+
+  if [ -e ~/.bashrc-local ]; then
+    source ~/.bashrc-local
+  fi
 
 ### MOTD
 
