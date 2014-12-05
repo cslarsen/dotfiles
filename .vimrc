@@ -111,6 +111,12 @@ set pastetoggle=<C-p>
 " Mouse support
 set mouse=a
 
+" =============== Local configurations ===============
+
+  if filereadable($HOME . "/.vimrc-local")
+    exec ":source" . $HOME . "/.vimrc-local"
+  endif
+
 " =============== Vimp Initialization ===============
 " This section enables vimp as a package manager, and
 " was automatically added by vimp. Sorry for that!
