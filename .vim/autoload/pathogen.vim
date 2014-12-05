@@ -1,1 +1,0 @@
-/Users/csl/.vimp/installed/pathogen-2.3/autoload/pathogen.vim

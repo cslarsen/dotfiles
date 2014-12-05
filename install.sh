@@ -19,8 +19,24 @@ symlink .bash_profile
 symlink .inputrc
 symlink .oh-my-zsh
 symlink .tmux.conf
-symlink .vim
-symlink .vimp
 symlink .vimrc
 symlink .zsh
 symlink .zshrc
+
+# Install vim modules if vimp exists
+which vimp &>/dev/null && vimp get \
+  colorcolumn \
+  ctrlp \
+  forcequit@ctrl-x \
+  fugitive \
+  invnumber@ctrl-n \
+  molokai \
+  nerdcommenter \
+  nerdtree@ctrl-d \
+  nohlsearch@ctrl-o \
+  powerline \
+  signify \
+  surround \
+  tabs@ctrl-lhtk \
+  taglist@ctrl-a \
+  undotree@ctrl-u

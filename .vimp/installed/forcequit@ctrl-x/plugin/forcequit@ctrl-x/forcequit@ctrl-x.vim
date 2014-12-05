@@ -1,1 +1,0 @@
-nmap <silent> <C-x> :q!<Cr>
