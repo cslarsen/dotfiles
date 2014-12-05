@@ -13,6 +13,7 @@ function symlink() {
   fi
 }
 
+echo "Updating oh-my-zsh submodule"
 git submodule update --init oh-my-zsh
 
 symlink .bash_profile
@@ -20,10 +21,15 @@ symlink .inputrc
 symlink .oh-my-zsh
 symlink .tmux.conf
 symlink .vimrc
-symlink .zsh
 symlink .zshrc
 
-# Install vim modules if vimp exists
+echo ""
+echo Telling git to use core pager, previous setting was: \
+  \"`git config --get core.pager`\"
+git config --global core.pager ''
+
+echo ""
+echo "Installing vim modules, if you have vimp"
 which vimp &>/dev/null && vimp get \
   colorcolumn \
   ctrlp \
