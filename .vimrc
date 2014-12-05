@@ -89,7 +89,7 @@ set sidescrolloff=15
 set sidescroll=1
 
 " ================ Various ======================
-set tw=76               " Break at 76th column
+set tw=79               " Break at 79th column
 set bg=dark             " Dark background
 set laststatus=2        " Show status line in single window
 
