@@ -1,7 +1,11 @@
 #!/bin/bash
 
 function symlink() {
-  if [ ! -e $HOME/$1 ] ; then
+  # Don't overwrite files, dirs or links
+  if [ ! -e $HOME/$1 ] && \
+     [ ! -d $HOME/$1 ] && \
+     [ ! -L $HOME/$1 ];
+  then
     echo "Symlinking $HOME/$1"
     ln -s `pwd`/$1 $HOME/$1
   else
