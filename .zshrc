@@ -6,6 +6,9 @@ uname="`uname -s`"
   # First look in user-bin, then local-bin, then elsewhere
   export PATH=~/bin:/usr/local/bin:${PATH}
 
+  # Enable 256 colors in terminal
+  export TERM=xterm-256color
+
   ### MAC OS X SPECIFIC SETTINGS
 
   if [ "x$uname" = "xDarwin" ] ; then
