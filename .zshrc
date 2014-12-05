@@ -105,6 +105,12 @@ uname="`uname -s`"
   # Disable history sharing
   unsetopt share_history
 
+### Load host specific configurations
+
+  if [ -e ~/.zshrc-local ]; then
+    source ~/.zshrc-local
+  fi
+
 ### MOTD
 
   # Display fortune cookie in the most ridiculous way
