@@ -33,6 +33,7 @@ echo "Installing vim modules, if you have vimp"
 which vimp &>/dev/null && vimp get \
   colorcolumn \
   ctrlp \
+  dispatch
   forcequit@ctrl-x \
   fugitive \
   invnumber@ctrl-n \
