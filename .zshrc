@@ -94,18 +94,16 @@ uname="`uname -s`"
 
 ### Load oh-my-zsh on OS X (on Linux tmus+oh-my-zsh is dead slow)
 
-  if [ "x$uname" = "xDarwin" ] ; then
-    export ZSH=$HOME/.oh-my-zsh
-    ZSH_THEME="af-magic"
-    plugins=()
-    source ~/.oh-my-zsh/oh-my-zsh.sh
+  export ZSH=$HOME/.oh-my-zsh
+  ZSH_THEME="af-magic"
+  plugins=()
+  source ~/.oh-my-zsh/oh-my-zsh.sh
 
-    # Slightly modify af-magic prompt
-    PROMPT='$FG[237]%{$reset_color%}$FG[032]%~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
+  # Slightly modify af-magic prompt
+  PROMPT='$FG[237]%{$reset_color%}$FG[032]%~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
 
-    # Disable history sharing
-    unsetopt share_history
-  fi
+  # Disable history sharing
+  unsetopt share_history
 
 ### MOTD
 
