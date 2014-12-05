@@ -13,8 +13,8 @@ function symlink() {
   fi
 }
 
-echo "Updating oh-my-zsh submodule"
-git submodule update --init oh-my-zsh
+echo "Updating git submodules"
+git submodule update --init --recursive
 
 symlink .bash_profile
 symlink .inputrc
@@ -33,7 +33,7 @@ echo "Installing vim modules, if you have vimp"
 which vimp &>/dev/null && vimp get \
   colorcolumn \
   ctrlp \
-  dispatch
+  dispatch \
   forcequit@ctrl-x \
   fugitive \
   invnumber@ctrl-n \
