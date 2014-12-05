@@ -13,6 +13,8 @@ function symlink() {
   fi
 }
 
+git submodule update --init oh-my-zsh
+
 symlink .bash_profile
 symlink .inputrc
 symlink .oh-my-zsh
