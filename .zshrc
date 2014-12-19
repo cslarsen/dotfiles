@@ -56,7 +56,7 @@ uname="`uname -s`"
   alias la='ls -la'
 
   # Suffix paths with slash (-F), human-readable sizes (-h), colors (-G)
-  alias ls='ls -FhG --color=always'
+  alias ls='ls -FhG'
 
   # Have grep color highlight matches
   alias grep='grep --color=always'
