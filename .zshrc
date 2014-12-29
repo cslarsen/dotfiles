@@ -81,7 +81,7 @@ uname="`uname -s`"
   export LSCOLORS=DxBxCxCxCxCxCxCxCxCxCx
 
   # Highlight grep matches with a bright pink color
-  export GREP_COLOR='38;5;197m'
+  export GREP_COLOR='38;5;197'
 
 ### ALIASES
 
