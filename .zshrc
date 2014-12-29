@@ -56,7 +56,7 @@ uname="`uname -s`"
   alias la='ls -la'
 
   # Suffix paths with slash (-F), human-readable sizes (-h), colors (-G)
-  alias ls='ls -FhG --color=always'
+  alias ls='ls -FhG'
 
   # Have grep color highlight matches
   alias grep='grep --color=always'
@@ -101,7 +101,7 @@ uname="`uname -s`"
   ZSH_THEME="af-magic"
   plugins=()
   source ~/.oh-my-zsh/oh-my-zsh.sh
-  alias ls='ls -FhG --color=always'
+  alias ls='ls -FhG'
 
   # Slightly modify af-magic prompt
   PROMPT='$FG[237]%{$reset_color%}$FG[032]%~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
