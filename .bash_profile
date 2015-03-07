@@ -32,7 +32,8 @@ uname="`uname -s`"
     export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/Cellar/llvm/3.4/lib/
 
     # Enable Homebrew Python packages
-    export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
+    # Update: Don't. One OS X, python3 doesn't work with this set.
+    #export PYTHONPATH=/usr/local/lib/python2.7/site-packages:$PYTHONPATH
 
     # Add npm to path
     export PATH=${PATH}:/usr/local/share/npm/bin
