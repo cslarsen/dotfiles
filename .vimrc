@@ -110,6 +110,12 @@ set pastetoggle=<C-p>
 
 " Mouse support
 set mouse=a
+"
+" Set comma as leader character
+let mapleader=","
+
+" Map CTRL+C to toggle comments
+map  <C-c> :call NERDComment(0, "toggle")<CR>
 
 " =============== Local configurations ===============
 
