@@ -115,7 +115,10 @@ set mouse=a
 let mapleader=","
 
 " Map CTRL+C to toggle comments
-map  <C-c> :call NERDComment(0, "toggle")<CR>
+map <C-c> :call NERDComment(0, "toggle")<CR>
+
+" Map CTRL+Z to special suspend (so vim doesn't mess up the terminal)
+map <C-z> :sus<CR>
 
 " =============== Local configurations ===============
 
