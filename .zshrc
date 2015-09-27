@@ -106,7 +106,7 @@ uname="`uname -s`"
   alias ls='ls -FhG'
 
   # Slightly modify af-magic prompt
-  PROMPT='$FG[237]%{$reset_color%}$FG[032]%~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
+  PROMPT='$FG[237]%{$reset_color%}$FG[032]%n@%m %~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
 
   # Disable history sharing
   unsetopt share_history
