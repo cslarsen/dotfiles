@@ -13,7 +13,7 @@ uname="`uname -s`"
 
   if [ "x$uname" = "xDarwin" ] ; then
     # TeXLive
-    export PATH=${PATH}:/usr/local/texlive/2011/bin/x86_64-darwin
+    export PATH=${PATH}:/usr/local/texlive/2015/bin/x86_64-darwin
 
     # Local static binaries
     export PATH=${PATH}:/usr/local/sbin
