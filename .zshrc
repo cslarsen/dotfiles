@@ -9,6 +9,9 @@ uname="`uname -s`"
   # Enable 256 colors in terminal
   export TERM=xterm-256color
 
+  # Make bc load config file
+  export BC_ENV_ARGS="$HOME/.bc"
+
   ### MAC OS X SPECIFIC SETTINGS
 
   if [ "x$uname" = "xDarwin" ] ; then

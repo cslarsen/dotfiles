@@ -22,6 +22,7 @@ symlink .oh-my-zsh
 symlink .tmux.conf
 symlink .vimrc
 symlink .zshrc
+symlink .bc
 
 echo ""
 echo Telling git to use core pager, previous setting was: \
@@ -42,7 +43,6 @@ which vimp &>/dev/null && vimp get \
   nerdtree@ctrl-d \
   nohlsearch@ctrl-o \
   powerline \
-  signify \
   surround \
   tabs@ctrl-lhtk \
   taglist@ctrl-a \
