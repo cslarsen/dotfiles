@@ -105,6 +105,10 @@ au BufNewFile,BufRead *.sld set filetype=scheme
 " Recognize Python files
 au BufNewFile,BufRead *.py set filetype=python
 
+" Turn off C-indenting for some filetypes
+au BufNewFile,BufRead *.md set nocindent
+au BufNewFile,BufRead *.txt set nocindent
+
 " Toggle paste mode with CTRL+P in edit mode
 set pastetoggle=<C-p>
 
