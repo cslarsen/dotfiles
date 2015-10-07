@@ -94,7 +94,9 @@ uname="`uname -s`"
   alias gbr="git branch -r"
   alias gbv="git branch -v"
   alias gd='git diff'
+  alias gdl='git diff | less'
   alias gl="git log"
+  alias gll="git log | less"
   alias gs='git status'
 
   # Make R not ask to save workspace
