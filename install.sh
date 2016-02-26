@@ -20,6 +20,7 @@ symlink .bash_profile
 symlink .bc
 symlink .inputrc
 symlink .oh-my-zsh
+symlink .tmux
 symlink .tmux.conf
 symlink .vimrc
 symlink .zshrc
