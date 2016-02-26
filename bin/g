@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Grep recursively on all non-binary files
+grep -RI "${*}" *

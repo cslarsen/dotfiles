@@ -17,12 +17,12 @@ echo "Updating git submodules"
 git submodule update --init --recursive
 
 symlink .bash_profile
+symlink .bc
 symlink .inputrc
 symlink .oh-my-zsh
 symlink .tmux.conf
 symlink .vimrc
 symlink .zshrc
-symlink .bc
 
 echo ""
 echo Telling git to use core pager, previous setting was: \
@@ -47,3 +47,11 @@ which vimp &>/dev/null && vimp get \
   tabs@ctrl-lhtk \
   taglist@ctrl-a \
   undotree@ctrl-u
+
+echo ""
+echo "Installing scripts into $HOME/bin"
+if [ ! -d $HOME/bin ]; then
+  mkdir $HOME/bin
+fi
+symlink bin/g
+symlink bin/gi
