@@ -115,6 +115,8 @@ uname="`uname -s`"
 
   # Slightly modify af-magic prompt
   PROMPT='$FG[237]%{$reset_color%}$FG[032]%n@%m %~$(git_prompt_info) $FG[105]%(!.#.»)%{$reset_color%} '
+  # Remove ***INSANELY*** annoying right-hand user@host prompt
+  unset RPROMPT
 
   # Disable history sharing
   unsetopt share_history
