@@ -99,6 +99,9 @@ uname="`uname -s`"
   alias gll="git log | less"
   alias gs='git status'
 
+  # GNU global
+  alias gx='global -x'
+
   # Make R not ask to save workspace
   alias R='R --no-save'
 
