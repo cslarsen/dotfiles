@@ -71,6 +71,9 @@ uname="`uname -s`"
   if [ "x$uname" = "xDarwin" ] ; then
     # Almost like ldd on Linux
     alias ldd="otool -L"
+
+    # Quicklook (finder + space on file)
+    alias ql="qlmanage -p >/dev/null 2>&1"
   fi
 
 ### ENVIRONMENT VARIABLES
