@@ -97,10 +97,10 @@ uname="`uname -s`"
   alias gbr="git branch -r"
   alias gbv="git branch -v"
   alias gd='git diff'
-  alias gdl='git diff | less'
+  alias gdl='git diff --color=always | less'
   alias gl="git log"
-  alias gll="git log | less"
-  alias gs='git status'
+  alias gll="git log --color=always | less"
+  alias gs='git status -sb'
 
   # GNU global
   alias gx='global -x'
