@@ -101,6 +101,7 @@ uname="`uname -s`"
   alias gl="git log"
   alias gll="git log --color=always | less"
   alias gs='git status -sb'
+  alias ga='git commit --amend --no-edit'
 
   # GNU global
   alias gx='global -x'
