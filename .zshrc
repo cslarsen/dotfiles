@@ -12,6 +12,9 @@ uname="`uname -s`"
   # Make bc load config file
   export BC_ENV_ARGS="$HOME/.bc"
 
+  # Enable tab completion etc
+  export PYTHONSTARTUP=~/.pythonrc
+
   ### MAC OS X SPECIFIC SETTINGS
 
   if [ "x$uname" = "xDarwin" ] ; then
