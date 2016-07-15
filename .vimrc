@@ -104,6 +104,9 @@ au BufNewFile,BufRead *.sld set filetype=scheme
 
 " Recognize Python files
 au BufNewFile,BufRead *.py set filetype=python
+"
+" Recognize roxarpy files
+au BufNewFile,BufRead *.roxarpy set filetype=python
 
 " Turn off C-indenting for some filetypes
 au BufNewFile,BufRead *.md set nocindent
