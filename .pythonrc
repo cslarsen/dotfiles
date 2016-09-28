@@ -1,5 +1,7 @@
 # Set PYTHONSTARTUP=~/.pythonrc to execute this file each time you start Python
 
 # Adds TAB completion to REPL
-import rlcompleter, readline
-readline.parse_and_bind('tab: complete')
+import sys
+if sys.version_info[0] < 3:
+  import rlcompleter2, readline
+  readline.parse_and_bind('tab: complete')
