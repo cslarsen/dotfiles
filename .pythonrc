@@ -3,5 +3,8 @@
 # Adds TAB completion to REPL
 import sys
 if sys.version_info[0] < 3:
-  import rlcompleter2, readline
-  readline.parse_and_bind('tab: complete')
+    try:
+        import rlcompleter2, readline
+        readline.parse_and_bind('tab: complete')
+    except ImportError:
+        pass

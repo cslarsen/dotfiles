@@ -97,14 +97,20 @@ uname="`uname -s`"
 ### ALIASES
 
   # Git
+  #
+  # I use these aliases all the time
+  alias ga='git commit --amend --no-edit'
+  alias gd='git diff'
+  alias gl="git log"
+  alias gll="git log --color=never | head -2000 | vim -"
+  alias gs='git status -sb'
+  # I also use gdd, a script: 'git diff $* | vim -'
+
+  # I don't remember to use these as much
   alias gbr="git branch -r"
   alias gbv="git branch -v"
-  alias gd='git diff'
   alias gdl='git diff --color=always | less'
-  alias gl="git log"
-  alias gll="git log --color=always | less"
-  alias gs='git status -sb'
-  alias ga='git commit --amend --no-edit'
+  alias gn='git show --name-only --oneline'
 
   # GNU global
   alias gx='global -x'
