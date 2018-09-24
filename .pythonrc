@@ -2,6 +2,7 @@
 
 # Adds TAB completion to REPL
 import sys
+
 if sys.version_info[0] < 3:
     try:
         import rlcompleter2, readline
