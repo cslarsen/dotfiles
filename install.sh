@@ -25,6 +25,7 @@ symlink .tmux.conf
 symlink .vimrc
 symlink .zshrc
 symlink .pythonrc
+symlink .psqlrc
 
 echo ""
 echo Telling git to use core pager, previous setting was: \

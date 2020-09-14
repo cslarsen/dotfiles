@@ -1,0 +1,24 @@
+\set QUIET 1
+-- above: doesn't prompt the commands in this file when psql start
+
+-- Make NULLs more visible
+\pset null '✝'
+
+-- Transform tab-completed keywords to uppercase
+\set COMP_KEYWORD_CASE upper
+
+-- Shows how much time commands take
+\timing
+
+-- A slightly different prompt. Shows backend PID, which I think is nice
+--\set PROMPT1 '%[%033[1m%][%/] %p # '
+
+-- Trick:
+-- \e to edit a buffer (SQL command)
+-- \C `clear` to clear everytime it's displayed
+-- \watch 1 to run that every second on a clear screen
+
+-- Auto-use expanded mode for big outputs
+\x auto
+
+\unset QUIET
